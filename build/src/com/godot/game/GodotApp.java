@@ -39,6 +39,10 @@ import android.os.Bundle;
  * Feel free to extend and modify this class for your custom logic.
  */
 public class GodotApp extends GodotActivity {
+	// This block calls the JNI_OnLoad, needed for livekit 
+	static {
+		System.loadLibrary("decentraland_godot_lib");
+	}
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.GodotAppMainTheme);
