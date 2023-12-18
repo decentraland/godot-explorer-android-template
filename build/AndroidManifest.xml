@@ -31,6 +31,10 @@
             android:name="org.godotengine.editor.version"
             android:value="${godotEditorVersion}" />
 
+        <meta-data
+            android:name="org.godotengine.plugin.v2.DclAndroidPlugin"
+            android:value="com.godot.game.DclAndroidPlugin"/>
+
         <activity
             android:name=".GodotApp"
             android:label="@string/godot_project_name_string"
