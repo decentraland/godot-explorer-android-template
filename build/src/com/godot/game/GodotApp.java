@@ -41,7 +41,7 @@ import android.os.Bundle;
 public class GodotApp extends GodotActivity {
 	// This block calls the JNI_OnLoad, needed for livekit 
 	static {
-		System.loadLibrary("decentraland_godot_lib");
+		System.loadLibrary("dclgodot");
 	}
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
