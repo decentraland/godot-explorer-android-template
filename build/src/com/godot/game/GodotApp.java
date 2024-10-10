@@ -43,6 +43,7 @@ import androidx.core.splashscreen.SplashScreen;
 public class GodotApp extends GodotActivity {
 	// This block calls the JNI_OnLoad, needed for livekit 
 	static {
+		System.loadLibrary("c++_shared");
 		System.loadLibrary("dclgodot");
 	}
 	@Override
